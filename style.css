@@ -1,0 +1,258 @@
+*{
+    background: #E5E5E5;
+    font-family: 'Inter';
+    font-weight: 400;
+    line-height: 150%;
+}
+.logo{
+    padding-top: 10px;
+    margin-left: 10px;
+    margin-top: 20px;
+    width: 8%;
+}
+main{
+    display: flex;
+    margin-bottom: 20px;
+    margin-left: 80px;
+    justify-content: center;
+}
+.TextoEntrada{
+    resize: none;
+    font-size: 32px;
+    margin-top: 90px;
+    margin-bottom: 80px;
+    color: #0A3871;
+    border: none;
+}
+.TextoEntrada::placeholder{
+    color: #0A3871;
+}
+.TextoEntrada:focus{
+    outline:  none;
+}
+.TextoSalida{
+    resize: none;
+    font-size: 32px;
+    margin-left: 98px;
+    padding: 20px;
+    padding-bottom: 120px;
+    height: 612px;
+    color: #0A3871;
+    background: white;
+    background-image: url(imagenes/Muñeco.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    border-radius: 32px;
+    box-shadow: 0 24px 32px -8px rgba(0, 0, 0, 0.08);
+}
+.TextoSalida:focus{
+    outline: none;
+}
+.parrafo{
+    color: grey;
+    font-size: 16px;
+}
+.botones{
+    display: flex;
+    gap: 24px;
+}  
+.encriptar{
+    display: flex;
+    width: 328px;
+    justify-content: center;
+    background-color: #0A3871;
+    color: #FFFFFF;
+    font-size: 1rem;
+    border-radius: 24px;
+    padding: 24px 24px;
+    border-style: none;
+}
+.desencriptar{
+    display: flex;
+    width: 332px;
+    justify-content: center;
+    background-color: #D8DFE8;
+    color: #0A3871;
+    border-color: #0A3871;
+    font-size: 1rem;
+    border-radius: 24px;
+    border: 1px;
+    padding: 24px 24px;
+    border-style:solid;
+}
+.dinamico{
+    background: transparent;
+    margin-left: 120px;
+    margin-top: -240px;
+    width: 360px;
+    position: absolute;
+    text-align: center;
+}
+.tituloSalida{
+    font-size: 24px;
+    font-weight: bold;
+    line-height: initial;
+    background: transparent;
+}
+.parrafoSalida{
+    font-size: 16px;
+    line-height: initial;
+    background: transparent;
+}
+.copiar{
+    color: #0A3871;
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    border-radius: 25px;
+    cursor: pointer;
+    height: 67px;
+    width: 336px;
+    margin-top: 120px;
+}
+.encriptar:hover, .desencriptar:hover, .copiar:hover{
+    background: #555;
+    color: white;
+}
+.anuncio{
+    display: none;
+    width: 300px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 80px;
+    left: 100px;
+    margin-left: -75px;
+    opacity: .6;
+}
+footer{
+    text-align: center;
+    background-color: #0A3871;
+    
+}
+.desarrollo{
+    color: #D8DFE8;
+    background: transparent;
+    font-size: 15px;
+    margin: 5px; 
+}
+/*.............................................................Version  Laptop .............................................................................. */
+@media screen and (min-width: 1024px) {
+    main{
+        margin-left: 0px;
+    }
+    .TextoEntrada{
+        margin-top: 50px;
+        margin-right: 5px;
+        width: 686px;
+        height: 400px;
+    }
+    .botones, .TextoSalida{
+        margin-top: 0px;
+    }
+    .TextoSalida{
+        height: 550px;
+    }
+    .dinamico{
+        margin-top: -160px;
+    }
+    .copiar{
+        margin-top: 60px;
+    }
+}
+
+/*.................................................................... Version Tablet.........................................................................*/
+@media screen and (max-width: 1023px) {
+   .logo{
+    width: 15%;
+    margin-top: 40px;
+   } 
+   main{
+    display: block;
+    margin: 0px 30px;
+   }
+   .TextoEntrada{
+    margin-top: 60px;
+    width: 100%;
+    height: 700px;
+   }
+   .botones{
+    margin-top: 0px;
+   }
+   .TextoSalida{
+    margin: 40px 0px;
+    width: 655px;
+    height: 300px;
+    background: white;
+   }
+   .dinamico{
+    margin-top: -250px;
+    margin-left: 0px;
+    width: 655px;
+   }
+   .tituloSalida{
+    margin-bottom: .5em;
+   }
+   .copiar{
+    margin-top: 100px;
+   }
+   .anuncio{
+    margin-left: 70px;
+   }
+}
+
+/*........................................................... Version  Celular........................................................... */
+@media screen and (max-width: 767px) {
+    .logo{
+        margin-top: 30px;
+        width: 30%;
+    }
+    .TextoEntrada{
+        margin-top: 20px;
+        height: 340px;
+    }
+    .botones{
+        display: block;
+        margin-top: 0px;
+        width: auto;
+        
+    }
+    .encriptar, .desencriptar{
+        width: 97%;
+    }
+    .desencriptar{
+        margin-left: 0px;
+        margin-top: 15px;
+    }
+    .TextoSalida, .dinamico, .copiar{
+        width: 95%;
+        
+    }
+
+    .copiar{
+       
+        width: 90%;
+        margin-left: 11%;
+        margin-right: 11%;
+    }
+
+    .dinamico{
+        margin-left: 10px;
+        width: 70%;
+        text-align: center;
+    }
+    .TextoSalida{
+        padding: 10px;
+        padding-bottom: 120px;
+        height: 180px;
+    }
+    .anuncio{
+        width: 80%;
+        margin-left: -59px;
+    }
+       
+}
